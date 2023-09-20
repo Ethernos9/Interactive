@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:#fff;
+    font-family:PP mori;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+
+.cursor{
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    position:fixed;
+    background-color:#EDBFFF;
+    z-index:8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    mix-blend-mode: difference;
+    /* transition:left linear 0.1s top linear 0.1s; */
+}
+.main{
+    background-color:#0F0D0D;
+    cursor:none;
+}
+.page1{
+    min-height:100vh;
+    width: 100%;
+   position:relative;
+   z-index:9;
+   padding-top :12vw;
+    
+
+}
+#nav{
+    height:55px;
+    width:100%;
+    position:fixed;
+    /* background-color: red; */
+    display:flex;
+    align-items :center;
+    justify-content :space-between;
+    padding:0 30px;
+    mix-blend-mode:difference;
+    z-index:99;
+}
+#nav>img{
+    /* margin-left:20px; */
+    height:26px;
+}
+#nav-part2{
+    display: flex;
+    align-items:center;
+    justify-content :center;
+    gap:20px;
+}
+#circle{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    /* margin-right:10px; */
+    border-radius: 50%;
+
+}
+#nav-part2 h4{
+    text-transform: uppercase;
+    font: size 14px;
+    font-weight:600;
+}
+#nav h4:nth-child(1){
+    border-bottom: 1.5px solid #fff;
+
+}
+.page1 h1{
+      font-size:8vw; 
+      margin-top:12vw;
+      margin-left:5vw;
+      font-family:PP mori;
+      font-weight:300;
+}
+.page1 h2{
+            font-size:6vw;
+            font-weight:300;
+            font-family:PP mori;
+            margin-left:26vw;
+}
+.page1 video{
+    width:60%;
+    margin-top:10vw;
+    position:relative;
+    left:50%;
+    transform:translate(-50%,0);
+    
+}
+.page2{
+    min-height:80vh;
+    width:100%;
+    padding:90px 5vw;
+    border-bottom: 2px solid #6c6c6c;
+    position: relative;
+    z-index:9;
+    
+}
+.page2 h1{
+    font-size: 6vw;
+    font-weight:250;
+    color:#111;
+    font-family:PP mori;
+}
+.page2-container{
+    height:60vh;
+    /* background-color: red; */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding:0 5vw; */
+}
+#page2-left{
+width:40%;
+/* background-color: blue; */
+}
+#page2-left h2{
+    font-size:4vw;
+    font-weight: 100;
+    color:#111;
+    font-family:PP mori;
+    line-height:4vw;
+}
+#page2-right{
+    width:24%;
+   
+  
+    }
+
+ #page2-right p{
+     font-size:24px;
+     color:#111;
+     font-weight:100;
+     font-family:PP mori;
+ }   
+ #page2-right button{
+    width:100%;
+    border-radius: 50px;
+    border:none;
+    padding:4px 0;
+    background-color: #EDBFFF;
+    color: #111;
+    margin-top: 20px;
+ }
+
+.page3{
+    min-height:100vh;
+    width:100%;
+    /* background-color: #EDBFFF; */
+    padding-top:100px;
+    position: relative;
+    z-index:9;
+    
+}
+ .page3 h1{
+    font-size:6.5vw;
+    font-weight:300;
+    color:#111;
+    margin-left:80px;
+ }
+ .page3-part1{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+
+
+ }
+ .page3-part1 img{
+    height:400px;
+    margin-top:160px;
+ }
+ .page3-part1 video{
+    height:400px;
+   margin-top :40px;
+ }
+ 
+ .page4{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    padding: 170px 100px;
+}
+.elem{
+    /* background-color: salmon; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.elem img{
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+#img1{
+    left: 2%;
+}
+#img2{
+    right: 5%;
+}
+.text-div{
+    height: 16vh;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+.elem h1{
+    font-size: 7.5vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+.page5{
+    /* background-color: red; */
+    min-height:100vh;
+    width:100%;
+    position: relative;
+    z-index:9;
+    padding: 140px 140px;
+}
+.page5 h2{
+font-size:4vw;
+font-weight:400;
+text-transform: uppercase;
+margin-bottom:50px ;
+}
+.box{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height:100px;
+    padding:0 20px;
+    border-top :2px solid #dadada;
+}
+.box:nth-last-child(1){
+    border-bottom: 2px solid #dadada;
+}
+
